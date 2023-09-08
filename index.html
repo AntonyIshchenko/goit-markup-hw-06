@@ -32,10 +32,10 @@
               <a class="nav-link" href="./index.html">Studio</a>
             </li>
             <li class="nav-link-item">
-              <a class="nav-link-old" href="">Portfolio</a>
+              <a class="nav-link-old" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-link-item">
-              <a class="nav-link-old" href="">Contacts</a>
+              <a class="nav-link-old" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -51,9 +51,9 @@
             </li>
           </ul>
         </address>
-        <button class="header-burger-button" type="button">
-          <svg class="header-burger-icon" width="24px" height="24px">
-            <use href="./images/icons.svg#burger-menu"></use>
+        <button class="header-mobil-button" type="button" open-mobil-menu>
+          <svg class="header-mobil-icon" width="24px" height="24px">
+            <use href="./images/icons.svg#mobil-menu"></use>
           </svg>
         </button>
       </div>
@@ -323,7 +323,7 @@
       <!-- PORTFOLIO -->
       <section class="section">
         <div class="container">
-          <h2 class="portfolio-heading">Our Portfolio</h2>
+          <h2 class="portfolio-heading" id="portfolio">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-li-item">
               <div class="portfolio-img-div">
@@ -447,7 +447,7 @@
     <!-- footer  -->
     <footer class="footer-section">
       <div class="container footer-div">
-        <div class="footer-text">
+        <div class="footer-text" id="contacts">
           <a class="logo-footer" href="./index.html"
             >Web<span class="logo-studio-footer">Studio</span></a
           >
@@ -608,40 +608,42 @@
       </div>
     </div>
 
-    <!-- BURGER MENU MODAL FORM -->
-    <div class="container is-hidden header-burger-menu">
-      <div class="burger-menu-main-div">
-        <button class="burger-close-button" type="button">
+    <!-- mobil MENU MODAL FORM -->
+    <div class="mobil-backdrop" mobil-form>
+      <div class="mobil-menu-main-div">
+        <button class="mobil-close-button" type="button" close-mobil-menu>
           <svg class="form-close-icon" width="8" height="8">
             <use href="/images/icons.svg#form-close"></use>
           </svg>
         </button>
         <nav>
-          <ul class="burger-menu-nav">
+          <ul class="mobil-menu-nav">
             <li>
-              <a class="burger-menu-link-studio" href="./index.html">Studio</a>
+              <a class="mobil-menu-link-studio js-menu-link" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li>
-              <a class="burger-menu-link" href="">Portfolio</a>
+              <a class="mobil-menu-link js-menu-link" href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a class="burger-menu-link" href="">Contacts</a>
+              <a class="mobil-menu-link js-menu-link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
-        <address class="burger-address">
-          <ul class="burger-address-list">
+        <address class="mobil-address">
+          <ul class="mobil-address-list">
             <li>
-              <a class="burger-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              <a class="mobil-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
             <li>
-              <a class="burger-email" href="mailto:info@devstudio.com"
+              <a class="mobil-email" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
           </ul>
         </address>
-        <ul class="burger-social-list">
+        <ul class="mobil-social-list">
           <li class="team-social-li">
             <a class="team-social-link" href="">
               <svg class="icon team-social-li-icon" width="16" height="16">
@@ -674,6 +676,7 @@
       </div>
     </div>
 
-    <script src="./js/modal-order-form.js"></script>
+    <!-- JS Scripts -->
+    <script src="./js/modal-objects.js"></script>
   </body>
 </html>
