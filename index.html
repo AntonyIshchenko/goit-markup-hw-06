@@ -16,7 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>goit-markup-hw-01</title>
+    <title>Web studio (GoIT mark up HW #6)</title>
   </head>
 
   <body>
@@ -57,71 +57,6 @@
           </svg>
         </button>
       </div>
-
-      <div class="container is-hidden header-burger-menu">
-        <div class="burger-menu-main-div">
-          <button class="burger-close-button" type="button">
-            <svg class="form-close-icon" width="8" height="8">
-              <use href="/images/icons.svg#form-close"></use>
-            </svg>
-          </button>
-          <nav>
-            <ul class="burger-menu-nav">
-              <li>
-                <a class="burger-menu-link-studio" href="./index.html">Studio</a>
-              </li>
-              <li>
-                <a class="burger-menu-link" href="">Portfolio</a>
-              </li>
-              <li>
-                <a class="burger-menu-link" href="">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <address class="burger-address">
-            <ul class="burger-address-list">
-              <li>
-                <a class="burger-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
-              </li>
-              <li>
-                <a class="burger-email" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <ul class="burger-social-list">
-            <li class="team-social-li">
-              <a class="team-social-link" href="">
-                <svg class="icon team-social-li-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="team-social-li">
-              <a class="team-social-link" href="">
-                <svg class="icon team-social-li-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="team-social-li">
-              <a class="team-social-link" href="">
-                <svg class="icon team-social-li-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="team-social-li">
-              <a class="team-social-link" href="">
-                <svg class="icon team-social-li-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </header>
 
     <main>
@@ -129,7 +64,9 @@
       <section class="hero-section section">
         <div class="container">
           <h1 class="hero-heading">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" open-order-modal-form>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -197,7 +134,11 @@
           <ul class="team-list">
             <li class="team-li">
               <img
-                src="./images/img-Mark-Guerrero.jpg"
+                srcset="
+                  ./images/team/mark-guerrero.jpg    1x,
+                  ./images/team/mark-guerrero-2x.jpg 2x
+                "
+                src="./images/team/mark-guerrero.jpg"
                 alt="Photo Mark Guerrero"
                 width="264"
                 height="260"
@@ -240,7 +181,8 @@
 
             <li class="team-li">
               <img
-                src="./images/img-Tom-Ford.jpg"
+                srcset="./images/team/tom-ford.jpg 1x, ./images/team/tom-ford-2x.jpg 2x"
+                src="./images/team/tom-ford.jpg"
                 alt="Photo Tom Ford"
                 width="264"
                 height="260"
@@ -283,7 +225,11 @@
 
             <li class="team-li">
               <img
-                src="./images/img-Camila-Garcia.jpg"
+                srcset="
+                  ./images/team/camila-garsia.jpg    1x,
+                  ./images/team/camila-garsia-2x.jpg 2x
+                "
+                src="./images/team/camila-garsia.jpg"
                 alt="Photo Camila Garcia"
                 width="264"
                 height="260"
@@ -326,7 +272,11 @@
 
             <li class="team-li">
               <img
-                src="./images/img-Daniel-Wilson.jpg"
+                srcset="
+                  ./images/team/daniel-wilson.jpg    1x,
+                  ./images/team/daniel-wilson-2x.jpg 2x
+                "
+                src="./images/team/daniel-wilson.jpg"
                 alt="Photo Daniel Wilson"
                 width="264"
                 height="260"
@@ -376,8 +326,9 @@
           <h2 class="portfolio-heading">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-li-item">
-              <div class="portfolio-img">
+              <div class="portfolio-img-div">
                 <img
+                  class="portfolio-img"
                   src="./images/portfolio/banking-app.jpg"
                   alt="banking-app-image"
                   width="360"
@@ -394,8 +345,9 @@
               </div>
             </li>
             <li class="portfolio-li-item">
-              <div class="portfolio-img">
+              <div class="portfolio-img-div">
                 <img
+                  class="portfolio-img"
                   src="./images/portfolio/cashless-payments.jpg"
                   alt="cashless-payments-image"
                   width="360"
@@ -412,8 +364,9 @@
               </div>
             </li>
             <li class="portfolio-li-item">
-              <div class="portfolio-img">
+              <div class="portfolio-img-div">
                 <img
+                  class="portfolio-img"
                   src="./images/portfolio/meditation-app.jpg"
                   alt="meditation-app-image"
                   width="360"
@@ -430,8 +383,9 @@
               </div>
             </li>
             <li class="portfolio-li-item">
-              <div class="portfolio-img">
+              <div class="portfolio-img-div">
                 <img
+                  class="portfolio-img"
                   src="./images/portfolio/taxi-service.jpg"
                   alt="taxi-service-image"
                   width="360"
@@ -448,8 +402,9 @@
               </div>
             </li>
             <li class="portfolio-li-item">
-              <div class="portfolio-img">
+              <div class="portfolio-img-div">
                 <img
+                  class="portfolio-img"
                   src="./images/portfolio/screen-illustrations.jpg"
                   alt="screen-illustrations"
                   width="360"
@@ -466,8 +421,9 @@
               </div>
             </li>
             <li class="portfolio-li-item">
-              <div class="portfolio-img">
+              <div class="portfolio-img-div">
                 <img
+                  class="portfolio-img"
                   src="./images/portfolio/online-courses.jpg"
                   alt="online-courses-image"
                   width="360"
@@ -544,6 +500,7 @@
                 type="email"
                 name="subscribe-email"
                 placeholder="E-mail"
+                required
             /></label>
 
             <button class="footer-subscribe-button" type="submit">
@@ -558,9 +515,9 @@
     </footer>
 
     <!-- MODAL FORM -->
-    <div class="container is-hidden">
+    <div class="order-backdrop" order-modal-form>
       <div class="form-main-div">
-        <button class="form-close-button" type="button">
+        <button class="form-close-button" type="button" close-order-modal-form>
           <svg class="form-close-icon" width="8" height="8">
             <use href="./images/icons.svg#form-close"></use>
           </svg>
@@ -577,6 +534,7 @@
                 type="text"
                 name="user-name"
                 id="user-name"
+                required
               />
               <svg class="form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#form-person"></use>
@@ -607,6 +565,7 @@
                 type="email"
                 name="user-email"
                 id="user-email"
+                required
               />
               <svg class="form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#form-email"></use>
@@ -632,6 +591,7 @@
               name="user-privacy"
               id="user-privacy"
               value="true"
+              required
             />
             <label class="form-checkbox-label" for="user-privacy">
               <span class="form-checkbox-icon-container">
@@ -643,9 +603,77 @@
               <a class="form-terms-link" href="">Privacy Policy</a>
             </label>
           </div>
-          <button class="form-submit-button hero-button" type="button">Send</button>
+          <button class="form-submit-button hero-button" type="submit">Send</button>
         </form>
       </div>
     </div>
+
+    <!-- BURGER MENU MODAL FORM -->
+    <div class="container is-hidden header-burger-menu">
+      <div class="burger-menu-main-div">
+        <button class="burger-close-button" type="button">
+          <svg class="form-close-icon" width="8" height="8">
+            <use href="/images/icons.svg#form-close"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="burger-menu-nav">
+            <li>
+              <a class="burger-menu-link-studio" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="burger-menu-link" href="">Portfolio</a>
+            </li>
+            <li>
+              <a class="burger-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="burger-address">
+          <ul class="burger-address-list">
+            <li>
+              <a class="burger-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li>
+              <a class="burger-email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="burger-social-list">
+          <li class="team-social-li">
+            <a class="team-social-link" href="">
+              <svg class="icon team-social-li-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-social-li">
+            <a class="team-social-link" href="">
+              <svg class="icon team-social-li-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-social-li">
+            <a class="team-social-link" href="">
+              <svg class="icon team-social-li-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-social-li">
+            <a class="team-social-link" href="">
+              <svg class="icon team-social-li-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/modal-order-form.js"></script>
   </body>
 </html>
