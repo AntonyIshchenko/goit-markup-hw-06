@@ -915,13 +915,21 @@ img {
     border var(--transition-duration) var(--transition-time-function);
 }
 
+.mobil-close-button:hover,
 .mobil-close-button:focus {
   background-color: var(--ocean-color);
   border: none;
   outline: transparent;
 }
 
-.mobil-close-button:focus .form-close-icon {
+.mobil-close-icon {
+  fill: var(--navyblue-color);
+
+  transition: fill var(--transition-duration) var(--transition-time-function);
+}
+
+.mobil-close-button:hover .mobil-close-icon,
+.mobil-close-button:focus .mobil-close-icon {
   fill: var(--white-color);
 }
 
